@@ -48,6 +48,7 @@ app.use(mongoSanitize())
 
 // API's Routes
 app.use('/api/v1/admin',AdminRouter);
+app.use('/api/v1/teacher',TeacherRouter);
 
 // Add global error-handling middleware at the end
 app.use(globalErrorHandler);

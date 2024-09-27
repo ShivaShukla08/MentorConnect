@@ -26,7 +26,7 @@ app.use(helmet(
 ));
 
 // Development logs
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV) {
     app.use(morgan('dev'));
 }
 
